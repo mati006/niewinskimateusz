@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>informacje</title>
+	<link rel="stylesheet" type="text/css" href="css_informacje.css">
+</head>
+<body>
+	<ul>
+    	<li><a href="index.html" title="Kliknij aby przejść do strony gównej" >Strona Główna</a></li>
+		<li><a href= "rowery.html" title="Kliknij aby przejść do strony z kontaktami">Rowery</a></li>
+    	<li><a href="informacje.html" title="Kliknij aby przejść do strony informacij" class="active">więcej</a></li>
+	</ul>
+<a href="#lista">lista</a> |
+<br>
+<br>
+<br>
+<div>tabela z stronami rowerowymi</div>
+<br>
+<table>
+    <tr>
+      <td class="tabela">TEMATY&nbsp;</td>
+      <td class="tabela">LINKI&nbsp;</td>
+    </tr>
+    <tr>
+      <td>Scott&nbsp;</td>
+      <td><a href="https://www.scott.pl/start" target="_blank">strona</a>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>Propain&nbsp;</td>
+      <td><a href="https://www.propain-bikes.com/en/" target="_blank">strona</a>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>Trek&nbsp;</td>
+      <td><a href="https://www.trekbikes.com/pl/pl_PL/" target="_blank">strona</a>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>Giant&nbsp;</td>
+      <td><a href="https://www.giant-bicycles.com/pl" target="_blank">strona</a>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>YT&nbsp;</td>
+      <td><a href="https://www.yt-industries.com/" target="_blank">strona</a>&nbsp;</td>
+    </tr>
+</table>
+<br>
+<br>
+<br>
+<br>
+<div id="lista">rodzaje rowerów</div>
+	<ul>
+		<li>enduro</li>
+	</ul>
+	<ul>
+		<li>freeride</li>
+	</ul>
+	<ul>
+		<li>down hill</li>
+	</ul>
+	<ul>
+		<li>dirt</li>
+	</ul>
+<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname">
+</form>
+	<p>ulubione rower</p>
+<form>
+  <input type="radio" id="html" name="fav_language" value="HTML">
+  <label for="html">scott</label><br>
+  <input type="radio" id="css" name="fav_language" value="CSS">
+  <label for="css">trek</label><br>
+  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+  <label for="javascript">giant</label>
+</form>
+<form>
+	<p>najmniej ulubione</p>
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1"> marin</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2"> canyon</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3"> propain</label>
+   <br>
+  <br>
+  <label for="cars">wybierz swój wymarzony rower:</label>
+  <br>
+<select id="cars" name="cars" size="4" multiple>
+  <option value="volvo">trek</option>
+  <option value="saab">propain</option>
+  <option value="fiat">giant</option>
+  <option value="audi">canyon</option>
+</select>
+  <br>
+  <br>
+  <input type="submit" value="Submit">
+  <input type="reset" value="reset">
+</form>
+
+</body>
+</html>

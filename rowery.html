@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>rowery</title>
+	<link rel="stylesheet" type="text/css" href="rowery_css.css">
+</head>
+<body>
+	<ul>
+    	<li><a href="index.html" title="Kliknij aby przejść do strony gównej" >Strona Główna</a></li>
+		<li><a href= "galeria.html" title="Kliknij aby przejść do strony z kontaktami" class="active">Rowery</a></li>
+    	<li><a href="informacje.html" title="Kliknij aby przejść do strony informacij" >więcej</a></li>
+	</ul>
+	<br>
+	<br>
+	<div class="container">
+
+  <div class="mySlides">
+    <div class="numbertext">1 / 7</div>
+      <img src="zd 7/canonadle clash.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 7</div>
+      <img src="zd 7/canyon torque.jpg" img_5terre_wide.jpg style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 7</div>
+      <img src="zd 7/propain tyee.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 7</div>
+      <img src="zd 7/remedy 9.9.jpg" style="width:100%">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">5 / 7</div>
+      <img src="zd 7/specialized enduro.jpg" style="width:100%">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">6 / 7</div>
+      <img src="zd 7/scoot ransom.jpg" style="width:100%">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">7 / 7</div>
+      <img src="zd 7/jeffsy pro race.jpg" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <div class="caption-container">
+    <p id="caption">7 cudownych rowerów&nbsp;</p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="zd 7/canonadle clash.jpg" style="width:100%" onclick="currentSlide(1)" alt="cannonadle">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src= "zd 7/canyon torque.jpg" style="width:100%" onclick="currentSlide(2)" alt="canyon">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="zd 7/propain tyee.jpg" style="width:100%" onclick="currentSlide(3)" alt="propain">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="zd 7/remedy 9.9.jpg" style="width:100%" onclick="currentSlide(4)" alt="trek">
+    </div>
+	<div class="column">
+      <img class="demo cursor" src="zd 7/specialized enduro.jpg" style="width:100%" onclick="currentSlide(5)" alt="specialized">
+    </div>
+	 <div class="column">
+      <img class="demo cursor" src="zd 7/scoot ransom.jpg" style="width:100%" onclick="currentSlide(6)" alt="scott">
+    </div>
+	<div class="column">
+      <img class="demo cursor" src="zd 7/jeffsy pro race.jpg" style="width:100%" onclick="currentSlide(7)" alt="yt">
+    </div>
+  </div>
+<script>
+	let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background-color:burlywood;
+}
+div {
+	color: black; 
+	font-family:"Times New Roman";
+	font: bold;
+	font-size: 50px;
+	background-color:darkcyan;
+    border-radius: 30px;
+	padding: 10px;
+	text-align: center;
+    border: 3px solid black;
+	margin: auto;
+}
+img{
+	vertical-align: middle;
+}
+ul{
+	list-style-type: none;
+	padding: 0px;
+	background-color: black;
+	overflow: hidden;
+}
+li{
+	display: inline;
+	float: left;
+}
+li a{
+	display: block;
+	text-decoration: none;
+	color:brown;
+	font-size: 30px;
+	padding: 10px;
+	background-color: black;
+}
+li a:hover {
+  color: white;
+  background-color: dimgray;
+  font-size: 32px;
+}
+.active{
+  background-color:grey;
+}
+
+.center{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+.img-radius{
+	border: 5px solid black;
+    border-radius: 30px;
+}
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width:1200px) {
+  .left {border-color:blue; width:50%; }
+  .right {border-color:lime; width:50%; }
+  }
+
+@media screen and (min-width:600px) {
+  .left, .right {border-style: dotted}
+  }
+@media screen and (max-width:600px) {
+  .left, .right {border-color: aqua}
+  }
